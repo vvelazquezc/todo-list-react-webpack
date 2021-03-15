@@ -22,11 +22,15 @@ body {
     padding: 8px 16px;
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
 }
+
+.todo__logo {
+  width: 100px;
+}
   /** BUTTONS*/
-  $colorPink: #e95678;
-  $colorPinkHover:#c23455;
-  $colorBlue: #25b0bc;
-  $colorBlueHover:#166b72;
+  $colorPink: #5ABDF2;
+  $colorPinkHover:#1E5DBA;
+  $colorBlue: #318CE3;
+  $colorBlueHover:#5ABDF2;
   
   @mixin button($class, $color, $colorHover) {
     .button.#{$class}{background: $color;}
@@ -43,7 +47,7 @@ body {
     color: white;
   }
   .button[disabled]{
-    opacity: 0.3;
+    opacity: 0.7;
   }
   
   @include button('pink', $colorPink, $colorPinkHover);
@@ -67,9 +71,9 @@ body {
 /** CHECKBOX*/
 /* Original styles by Shaw : https://codepen.io/shshaw/pen/WXMdwE */
 $duration: 0.4s;
-$stroke: #42d7e4;
-$colorText: #076b74;
-$colorTextChecked: #a5e7ec;
+$stroke: #1E5DBA;
+$colorText: #1E5DBA;
+$colorTextChecked: #1E5DBA;
 
 .todo {
   display: block;
